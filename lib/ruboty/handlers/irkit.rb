@@ -13,8 +13,8 @@ module Ruboty
       on(/irkit show (?<name>.+)/, name: "show", description: "Show IR Data")
       on(/irkit import (?<name>.+) (?<json>.+)/, name: "import", description: "Import IR Data")
       on(/irkit delete (?<name>.+)/, name: "delete", description: "Delete IR Data")
-      on(/irkit rename (?<old_name>.+) (?<new_name>.+)/, name: "rename", description: "rename IR Data to new name")
-      on(/irkit list/, name: "list", description: "Show list of IR Data and Devices")
+      on(/irkit rename (?<old_name>.+) (?<new_name>.+)/, name: "rename", description: "Rename IR Data to new name")
+      on(/irkit list/, name: "list", description: "Show list of IR Data")
 
       def get(message)
         name = message[:name]
