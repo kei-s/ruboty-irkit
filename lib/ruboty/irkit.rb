@@ -1,7 +1,3 @@
+require "ruboty"
 require "ruboty/irkit/version"
-
-module Ruboty
-  module Irkit
-    # Your code goes here...
-  end
-end
+require "ruboty/handlers/irkit"
