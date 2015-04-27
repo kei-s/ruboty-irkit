@@ -1,8 +1,6 @@
 # Ruboty::IRKit
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruboty/irkit`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A ruboty handler to control IRKit.
 
 ## Installation
 
@@ -22,7 +20,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+ruboty irkit get <name>                   - Get IR Data (alias: read)
+ruboty irkit post <name>                  - Post IR Data (alias: write)
+ruboty irkit delete <name>                - Delete IR Data
+ruboty irkit import <name> <json>         - Import IR Data
+ruboty irkit list                         - Show list of IR Data
+ruboty irkit rename <old_name> <new_name> - rename IR Data to new name
+ruboty irkit show <name>                  - Show IR Data
+```
+
+## ENV
+
+```
+IRKIT_CLIENTKEY - clientkey for IRKit
+IRKIT_DEVICEID  - deviceid for IRKit
+```
 
 ## Development
 
@@ -32,7 +45,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/ruboty-irkit/fork )
+1. Fork it ( https://github.com/kei-s/ruboty-irkit/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
