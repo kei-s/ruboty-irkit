@@ -5,7 +5,7 @@ require 'ruboty/irkit/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ruboty-irkit"
-  spec.version       = Ruboty::Irkit::VERSION
+  spec.version       = Ruboty::IRKit::VERSION
   spec.authors       = ["kei-s"]
   spec.email         = ["kei.shiratsuchi@gmail.com"]
 

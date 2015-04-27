@@ -1,5 +1,5 @@
 module Ruboty
-  module Irkit
+  module IRKit
     VERSION = "0.1.0"
   end
 end
